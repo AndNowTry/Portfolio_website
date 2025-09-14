@@ -3,12 +3,55 @@
 <head>
     {% load static %}
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>AND_NOW</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+
+    <link rel="stylesheet" href="{% static 'css/base_page_styles.css' %}">
     {% block extra_content %}
     {% endblock %}
 </head>
     <body>
+        <div class="sidewall">
+            <div class="social_container_main">
+                <a style="width: 90%; height: 90%; cursor: pointer;"><img class="sidewall_option_logo" src="{% static 'images/main_logo.png' %}"></a>
+            </div>
+
+            <div class="social_container_act">
+                <a class="sidewall_option"><img class="sidewall_option_logo" src="{% static 'images/user_information_white.svg' %}"></a>
+            </div>
+
+            <div class="social_container_not_act">
+                <a class="sidewall_option"><img class="sidewall_option_logo" src="{% static 'images/knowledge_white.svg' %}"></a>
+            </div>
+
+            <div class="social_container_not_act">
+                <a class="sidewall_option"><img class="sidewall_option_logo" src="{% static 'images/files_white.svg' %}"></a>
+            </div>
+
+            <div class="social_container_not_act">
+                <a class="sidewall_option"><img class="sidewall_option_logo" src="{% static 'images/github_white.svg' %}"></a>
+            </div>
+
+            <div class="social_container_not_act">
+                <a class="sidewall_option"><img class="sidewall_option_logo" src="{% static 'images/stepik_white.svg' %}"></a>
+            </div>
+
+            <div class="social_container_not_act">
+                <a class="sidewall_option"><img class="sidewall_option_logo" src="{% static 'images/telegram_white.svg' %}"></a>
+            </div>
+
+            <div class="social_container_not_act">
+                <a class="sidewall_option"><img class="sidewall_option_logo" src="{% static 'images/gmail_white.svg' %}"></a>
+            </div>
+
+            <div class="social_container_not_act">
+                <a class="sidewall_option"><img class="sidewall_option_logo" src="{% static 'images/donate_white.svg' %}"></a>
+            </div>
+
+            <h2 style="margin-top: auto; transform: rotate(90deg) translateX(-80px) translateY(2px); color: white">AND_NOW</h2>
+        </div>
         {% block main_content %}
         {% endblock %}
     </body>

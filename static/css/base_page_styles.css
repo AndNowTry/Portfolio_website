@@ -1,0 +1,148 @@
+body
+{
+    padding-top: 0.1px;
+    margin: 0px;
+    background: DimGrey;
+}
+
+@media (max-width: 1000px)
+{
+    .sidewall
+    {
+        background: black;
+        width: 80px;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 40px;
+        border-style: solid;
+        border-color: transparent Lime transparent transparent;
+        border-width: 5px;
+    }
+
+    .social_container_main
+    {
+        background: transparent;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social_container_not_act
+    {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-style: solid;
+        border-color: transparent;
+    }
+
+    .social_container_not_act:hover
+    {
+        background: black;
+        border-style: solid;
+        border-color: Lime black Lime Lime;
+        border-radius: 10px 0px 0px 10px;
+        border-width: 6px;
+    }
+
+    .social_container_act
+    {
+        background: black;
+        width: 100%;
+        height: 80px;
+        border-style: solid;
+        border-color: Lime black Lime Lime;
+        border-radius: 10px 0px 0px 10px;
+        border-width: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    .sidewall
+    {
+        background: black;
+        width: 60px;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+        border-style: solid;
+        border-color: transparent Lime transparent transparent;
+    }
+
+    .social_container_main
+    {
+        background: transparent;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social_container_not_act
+    {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-style: solid;
+        border-color: transparent;
+    }
+
+    .social_container_not_act:hover
+    {
+        border-style: solid;
+        border-color: Lime black Lime Lime;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .social_container_act
+    {
+        background: transparent;
+        width: 100%;
+        height: 60px;
+        border-style: solid;
+        border-color: Lime black Lime Lime;
+        border-radius: 5px 0px 0px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.sidewall_option_logo
+{
+    width: 100%;
+    height: 100%;
+
+}
+
+.sidewall_option
+{
+    width: 60%;
+    height: 60%;
+    cursor: pointer;
+}
+
+.sidewall_option:active
+{
+    width: 50%;
+    height: 50%;
+}
