@@ -9,6 +9,7 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
 
     <link rel="stylesheet" href="{% static 'css/base_page_styles.css' %}">
+    <script src="{% static 'js/base_page_scripts.js' %}"></script>
     {% block extra_content %}
     {% endblock %}
 </head>
@@ -51,6 +52,28 @@
             </div>
 
             <h2 style="margin-top: auto; transform: rotate(90deg) translateX(-80px) translateY(2px); color: white">AND_NOW</h2>
+        </div>
+        <div class="hat">
+            <div class="hat_container">
+                <div class="search_hat_container" id="search_hat_container">
+                    <form class="search_hat_form">
+                        <input class="search_input" type="search">
+                        <button class="search_button" type="button" id="search_button"><img style="height: 90%; width:90%;" src="{% static 'images/search_white.svg' %}"></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="hat_container">
+                <div class="user_hat_container">
+
+                </div>
+            </div>
+
+            <div class="hat_container">
+                <div class="settings_hat_container">
+
+                </div>
+            </div>
         </div>
         {% block main_content %}
         {% endblock %}

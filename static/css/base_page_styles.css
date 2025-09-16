@@ -2,7 +2,7 @@ body
 {
     padding-top: 0.1px;
     margin: 0px;
-    background: DimGrey;
+    background: #212121;
 }
 
 @media (max-width: 1000px)
@@ -46,20 +46,20 @@ body
 
     .social_container_not_act:hover
     {
-        background: black;
+        background: #212121;
         border-style: solid;
-        border-color: Lime black Lime Lime;
+        border-color: Lime #212121 Lime Lime;
         border-radius: 10px 0px 0px 10px;
         border-width: 6px;
     }
 
     .social_container_act
     {
-        background: black;
+        background: #212121;
         width: 100%;
         height: 80px;
         border-style: solid;
-        border-color: Lime black Lime Lime;
+        border-color: Lime #212121 Lime Lime;
         border-radius: 10px 0px 0px 10px;
         border-width: 6px;
         display: flex;
@@ -108,18 +108,19 @@ body
 
     .social_container_not_act:hover
     {
+        background: #212121;
         border-style: solid;
-        border-color: Lime black Lime Lime;
+        border-color: Lime #212121 Lime Lime;
         border-radius: 5px 0px 0px 5px;
     }
 
     .social_container_act
     {
-        background: transparent;
+        background: #212121;
         width: 100%;
         height: 60px;
         border-style: solid;
-        border-color: Lime black Lime Lime;
+        border-color: Lime #212121 Lime Lime;
         border-radius: 5px 0px 0px 5px;
         display: flex;
         align-items: center;
@@ -146,3 +147,145 @@ body
     width: 50%;
     height: 50%;
 }
+
+
+@media (max-width: 1000px)
+{
+    .hat
+    {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .hat_container
+    {
+        width: 90px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search_hat_container
+    {
+        background: black;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border: solid;
+        border-color: Lime;
+        border-radius: 40px 40px 40px 40px;
+        transition: all 1s;
+    }
+
+    .search_hat_container:hover
+    {
+        transform: translateX(-280px);
+        width: 640px;
+    }
+
+
+}
+
+@media (min-width: 1000px)
+{
+    .hat
+    {
+        width: 100%;
+        height: 84px;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .hat_container
+    {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    .search_hat_container
+    {
+        background: black;
+        position: absolute;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        border: solid;
+        border-color: Lime;
+        border-radius: 36px 36px 36px 36px;
+        transform-origin: right center;
+        transition: all 1s;
+    }
+
+    .search_hat_container:hover
+    {
+        width: 900px;
+
+        .search_input
+        {
+            margin-left: 6px;
+            visibility: visible;
+            left: 0;
+            width: 820px;
+            height: 50px;
+            border-radius: 36px 36px 36px 36px;
+            font: 1.3rem "Fira Sans", sans-serif;
+        }
+    }
+
+    .search_input
+    {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+        transition: all 1s;
+    }
+
+    .search_input:focus
+    {
+        outline: none;
+    }
+
+    .search_button
+    {
+        right: 0;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: transparent;
+    }
+
+    .search_button:hover
+    {
+        transform: scale(1.05);
+    }
+
+    .search_button:active
+    {
+        transform: scale(0.9);
+    }
+}
+
+.search_hat_form
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: clip;
+}
+
